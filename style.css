@@ -1,0 +1,407 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, sans-serif;
+
+}
+
+body {
+
+    display: flex;
+    justify-content: center;
+    background-color: lightblue;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    margin: 50px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.1);
+}
+
+.left {
+    position: relative;
+
+    background-color: #003147;
+    padding: 40px;
+
+
+}
+
+.profile {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid rgb(82, 82, 87);
+
+    padding-bottom: 15px;
+
+
+}
+
+.profile .profilePic {
+
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+
+.profile .profilePic img {
+
+    position: relative;
+    display: flex;
+    width: 200px;
+
+
+    /* position: absolute;
+    display: flex;
+    top: 0;
+    left:0;
+   width: 100%;
+    object-fit: cover; */
+}
+
+.profile h2 {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    ;
+    font-size: 1.5em;
+    ;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+
+}
+
+.profile h3 {
+    font-size: 1em;
+    ;
+    font-weight: lighter;
+    text-align: center;
+    color: rgb(207, 195, 195);
+    text-transform: uppercase;
+
+}
+
+.right {
+    position: relative;
+    padding: 40px;
+
+    background-color: white;
+}
+
+.contactInfo,
+.eduInfo,
+.lang {
+    color: aliceblue;
+
+
+}
+
+.title {
+    text-transform: uppercase;
+    padding: 30px 0 20px 0;
+}
+
+.contactList,
+.eduList,
+.langList {
+
+    list-style: none;
+
+}
+
+.contactList .icon {
+
+    color: #03a9F4;
+
+
+}
+
+.contactList li {
+
+    padding: 8px 0 8px 0;
+
+}
+
+li .text {
+
+    padding-left: 4.5px;
+
+}
+
+.contactList a {
+    color: aliceblue;
+    text-decoration: none;
+
+}
+
+/* .eduInfo {
+
+    color: aliceblue;
+
+} */
+
+/* .eduInfo .title{
+    text-transform: uppercase;
+    padding: 30px 0 10px 0;
+} */
+
+/* add with comma in above */
+/* .eduList {
+                       
+
+    list-style: none;
+} */
+/* 
+.eduList li{
+
+    padding: 8px 0 8px 0;
+    
+    } */
+.eduList li,
+.lang li {
+    padding-bottom: 20px;
+
+
+}
+
+.eduList h4:nth-child(3) {
+
+    font-weight: 500;
+}
+
+.eduList .date {
+
+    color: #03a9F4;
+
+}
+
+.date,
+.eduList h4 {
+
+    padding-bottom: 8px;
+
+
+}
+
+.marks {
+    font-style: italic;
+    font-size: 12px;
+}
+
+.percent {
+    position: relative;
+    display: inline-block;
+    background-color: #081921;
+
+    width: 100%;
+
+    height: 5px;
+
+}
+
+.percent div {
+    position: absolute;
+    height: 5px;
+    display: inline-block;
+    background-color: #03a9F4;
+
+}
+
+#eng {
+    width: 85%;
+}
+
+#hn {
+    width: 95%;
+}
+
+#mr {
+    width: 90%;
+}
+
+#ur {
+    width: 70%;
+}
+
+/* Right Side */
+
+.aboutMe p {
+    text-align: justify;
+    color: #665c5c;
+    /* line-height: 25px; */
+}
+
+.title2 {
+    padding: 5px 0 25px 0;
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+}
+
+.title3,
+.title4 {
+    padding: 35px 0 25px 0;
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+}
+
+.project .prInf {
+    list-style: square;
+
+    color: #5a4a4a;
+    text-align: justify;
+    margin-left: 20px;
+    padding-bottom: 10px;
+}
+
+.prInf li {
+    position: relative;
+    padding: 10px 0 10px 0;
+
+
+
+}
+
+.title4 {
+
+    padding: 15px 0 30px 0;
+
+
+}
+
+
+.box {
+
+    color: #665c5c;
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    row-gap: 20px;
+}
+
+.box h4 {
+
+    text-transform: uppercase;
+}
+
+.percent2 {
+
+    position: relative;
+    display: inline-block;
+    background-color: rgb(215, 211, 211);
+
+    width: 100%;
+    height: 10px;
+}
+
+.percent2 div {
+    position: absolute;
+    height: 10px;
+    display: inline-block;
+    background-color: #03a9F4;
+
+}
+
+#ht {
+
+    width: 90%;
+}
+
+#css {
+
+    width: 85%;
+}
+
+#js {
+
+    width: 80%;
+}
+
+#py {
+
+    width: 90%;
+}
+
+#cpp {
+
+    width: 90%;
+}
+
+#java {
+
+    width: 80%;
+}
+
+
+/* .intList ul {
+
+    list-style-type: none;
+    display: inline-block;
+    color: #5a4a4a;
+}
+*/
+.intList ul li {
+    margin: 10px;
+
+}
+
+.intList ul li i {
+    color: #03a9F4;
+}
+
+.intList ul {
+    list-style: none;
+    /* display: inline-block; */
+    color: #5a4a4a;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* row-gap: 20px; */
+
+}
+
+.title5 {
+    padding: 35px 0 25px 0;
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+}
+
+@media only screen and (max-width:1000px) {
+    .container {
+        margin: 10px;
+        grid-template-columns: 1fr;
+    }
+   
+}
+
+@media only screen and (max-width:650px) {
+
+    .box {
+
+        grid-template-columns: 1fr;
+
+    }
+    
+    .intList ul {
+
+        grid-template-columns: 1fr;
+    }
+}
